@@ -6,7 +6,12 @@
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+	"prettier": "^2.5.1"
   },
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+	"build": "tsc",
+  	"format:fix": "prettier 'src/**/*.{js,ts}' --write" 
+  }
 }
